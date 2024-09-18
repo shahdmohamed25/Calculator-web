@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    font-family: "Protest Guerrilla", sans-serif;
+    overflow: hidden;
+}
+
+.container{
+height: 100vh;
+width: 100vw;
+display: grid;
+place-items: center;
+}
+ h1{
+    color:  rgb(167, 120, 211) ;
+    font-size: 40px;
+  
+}
+.calculator{
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #000;
+    overflow: hidden;
+}
+
+#result {
+    margin-bottom: 15px;
+    width: 90%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: 5px solid  rgb(200,168, 230) ;
+    border-radius: 10px;
+    color: #40a4db;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms ease;
+    font-family: "Protest Guerrilla", sans-serif;
+
+   }
+  
+button:hover{
+    transform: scale(1.1);}
+.operator {
+    background-color: rgb(200,168, 230);
+    font-size: 30px;
+}#o{
+    font-size: 40px;
+}
+.number{
+    background-color: #90bfd9;
+}
+#equal{
+    background-color: rgb(236, 236, 170);
+
+}
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.theme-toggle input[type="checkbox"] {
+    display: none;
+}
+
+.theme-toggle label {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-color: rgb(200,168, 230);
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.theme-toggle label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-color: #080808;
+    border-radius: 50%;
+    transition: left 0.3s ease-in-out;
+}
+
+.theme-toggle input[type="checkbox"]:checked + label::before {
+    left: 25px;
+}.dark-mode .theme-toggle label {
+    background-color: #0e0e0e;
+}
+
+.dark-mode .theme-toggle label::before {
+    background-color: #fff;
+}
+.dark-mode-button{
+    background-color: #1b2f38;
+    color: burlywood;
+
+    font-family: "Protest Guerrilla", sans-serif;
+}
+/* Dark mode styles */
+.dark-mode {
+   
+    background-image: linear-gradient(to bottom right, #144156, #732d7c);
+}
+.dark-mode .calculator{
+    box-shadow: 0 0 10px blanchedalmond;
+    
+     background-color: #071115;
+}
+.dark-mode h1{
+    color: burlywood;
+}
+.dark-mode .number {
+    background-color: #1d4557;
+    border:0;
+    color:burlywood;
+    box-shadow: 0 0 10px #1d4557;
+}.dark-mode #result{
+    color:burlywood ;
+    box-shadow: 0 0 30px #2e1f30;
+    
+}
+.dark-mode .dark-mode-button{
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 0 10px #fff;
+}
+.dark-mode .operator {
+    background-color: #4e2853;
+    border: 0;
+    color: burlywood;
+    box-shadow: 0 0 10px #4e2853;
+}.dark-mode #equal{
+    background-color: #333;
+    color: burlywood;
+    box-shadow: 0 0 10px #333;
+}.dark-mode #result{
+    background-color: #000;
+    border: 5px solid  #2e1f30 ;
+}
+@media screen and (max-width:400px) {
+    .calculator{
+        width: 80vw;
+     
+    }
+    h1{
+        display: none;
+    }
+    #result{
+        font-size: 18px; 
+        width: 89%;
+        
+    }.buttons{
+        grid-gap: 5px; 
+    }
+    button{
+        font-size: 16px;
+        height: 16vw;
+        width: 16vw;
+    }
+  
+    
+}
+@media screen and (min-width:400px) and (max-width:540px){
+    p{
+        display:none;
+    }
+}
+

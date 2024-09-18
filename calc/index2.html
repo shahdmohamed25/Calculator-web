@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="CSS/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container"> 
+    <h1>let's calculate</h1>
+    <div class="calculator">
+        <input type="text" id="result" disabled>
+        <div class="message" id="message"></div>
+        <div class="buttons">
+            <button class="operator" id="clear" value="C">C</button>
+            <button class="operator" value="del">Del</button>
+            <button class="operator" value="%">%</button>
+            <button class="operator" value="/">/</button>
+            <button class="number"  value="7">7</button>
+            <button class="number" value="8">8</button>
+            <button class="number" value="9">9</button>
+            <button class="operator" value="*">X</button>
+            <button class="number" value="4">4</button>
+            <button class="number" value="5">5</button>
+            <button class="number" value="6">6</button>
+            <button class="operator" id="o" value="-">-</button>
+            <button class="number" value="1">1</button>
+            <button class="number" value="2">2</button>
+            <button class="number" value="3">3</button>
+            <button class="operator" id="o" value="+">+</button>
+            <button class="number" value="0">0</button>
+            <button class="number" value=".">.</button>
+            <button class="operator" id="equal" value="=">=</button>
+            <button class="operator" id="o" value="**">^</button>
+        </div>
+    </div>
+    <div class="theme-toggle">
+        <input type="checkbox" id="dark-mode-toggle">
+        <label for="dark-mode-toggle"></label>
+    </div>
+</div>
+    <script src="script2.js"></script>
+</body>
+</html>
